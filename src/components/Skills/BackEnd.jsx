@@ -22,17 +22,17 @@ function BackEnd() {
                     <i className="bx bxl-nodejs"></i>
                     <div className="">
                         <h3 className="skills__name">Node JS</h3>
-                        <span className="skills__level">Intermeditae</span>
+                        <span className="skills__level">Expert</span>
                     </div>
                 </div>
 
-                <div className="skills__data">
-                    <i className="bx bxl-django"></i>
+                 <div className="skills__data">
+                    <i className="bx bxl-thudnerclint"></i>
                     <div className="">
-                        <h3 className="skills__name">Django</h3>
+                        <h3 className="skills__name">Thunder Clint</h3>
                         <span className="skills__level">Intermediate</span>
                     </div>
-                </div>
+                </div> 
 
                 <div className="skills__data">
                     <i className="bx bxs-server"></i>
@@ -47,8 +47,8 @@ function BackEnd() {
                 <div className="skills__data">
                     <i className="bx bxs-coin-stack"></i>
                     <div className="">
-                        <h3 className="skills__name">MySQL</h3>
-                        <span className="skills__level">Beginner</span>
+                        <h3 className="skills__name">Firebase</h3>
+                        <span className="skills__level">Intermediate</span>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@ function BackEnd() {
                     <i className="bx bxl-mongodb"></i>
                     <div className="">
                         <h3 className="skills__name">Mongo DB</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Biggner</span>
                     </div>
                 </div>
 

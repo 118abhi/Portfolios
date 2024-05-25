@@ -13,9 +13,9 @@ function Services() {
             <div className="services__content">
                 <div>
                     <i style={{fontWeight:600}} className="uil bx bxl-airbnb services__icon"></i>
-                    <h3 className="services__title">AirBnb <br/>clone</h3>
+                    <h3 className="services__title">Netflix <br/>clone</h3>
                     
-                    <a href="#" target='_blank'>
+                    <a href="https://abhisahani.netlify.app/login" target='_blank'>
                         <span className="services__button">View Code <i className="uil uil-arrow-right services__button-icon"></i></span>
                     </a>
                     <br />
@@ -29,7 +29,7 @@ function Services() {
                 <div>
                     <i className="uil uil-arrow services__icon"></i>
                     <h3 className="services__title"> Portfolio<br />Website </h3>
-                       <a href="https://github.com/ShivaChary1/My-Portfolio" target='_blank'>
+                       <a href=" https://portfolio-abhi-silk.vercel.app/" target='_blank'>
                             <span className="services__button">View Code <i className="uil uil-arrow-right services__button-icon"></i></span>
                        </a>
                     <br />
@@ -57,7 +57,7 @@ function Services() {
                 <div>
                     <i className="uil uil-cloud-moon-rain services__icon"></i>
                     <h3 className="services__title">Weather <br /> App </h3>
-                    <a href="https://github.com/ShivaChary1/Weather-App" target="_blank">
+                    <a href=" #" target="_blank">
                     <span className="services__button">View Code <i className="uil uil-arrow-right services__button-icon"></i></span>
                     </a>
                    
@@ -82,21 +82,6 @@ function Services() {
                     
                 </div>
             </div>
-
-            {/* <div className="services__content" >
-                <div>
-                    <i className="uil uil-edit services__icon"></i>
-                    <h3 className="services__title">Visual <br /> Designer</h3>
-                    <a href="#" target="_blank">
-                    <span className="services__button">View Code <i className="uil uil-arrow-right services__button-icon"></i></span>
-                    </a>
-                    
-                    <br />
-                    <a href="#" target="_blank">
-                    <span className="services__button">Live Site <i className="uil uil-arrow-right services__button-icon"></i></span>
-                    </a>
-                </div>
-            </div> */}
         </div>    
     </section>
   )

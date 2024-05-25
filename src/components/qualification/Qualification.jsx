@@ -43,8 +43,8 @@ function Qualification() {
                 <div className={ toggle === 1?"qualification__content qualification__content-active": "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">BTech in Computer Science in AI & ML</h3>
-                            <span className="qualification__subtitle">CMR Institue of Technology, Hyderabad.</span>
+                            <h3 className="qualification__title">BSc in Computer Science </h3>
+                            <span className="qualification__subtitle">Rishi Ram Naresh Technical Institute, Uttar pradesh.</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"></i> &nbsp; 2022 - present
                             </div>
@@ -67,8 +67,8 @@ function Qualification() {
 
 
                         <div className="">
-                            <h3 className="qualification__title">Intermediate in MPC</h3>
-                            <span className="qualification__subtitle">Narayana Junior college, Hyderabad</span>
+                            <h3 className="qualification__title">Intermediate in Vic</h3>
+                            <span className="qualification__subtitle">Victory Inter collage, Uttar Pradesh</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"></i>&nbsp; 2020 - 2022
                             </div>
@@ -79,7 +79,7 @@ function Qualification() {
                     <div className="qualification__data">
                         <div className="">
                             <h3 className="qualification__title">Class X</h3>
-                            <span className="qualification__subtitle">St. Mary's Vidyaniketan High School, Pregnapur</span>
+                            <span className="qualification__subtitle">Balkrishan I C  Bhakriya Dewara mau, Uttar pradesh</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"></i> &nbsp;2020
                             </div>
@@ -88,7 +88,6 @@ function Qualification() {
 
                         <div>
                             <span className="qualification__rounder"></span>
-                            {/* <span className="qualification__line"></span> */}
                         </div>
                     </div>
                 </div>
@@ -96,8 +95,8 @@ function Qualification() {
                 <div className={ toggle === 2?"qualification__content qualification__content-active": "qualification__content"}>
                     <div className="qualification__data">
                         <div className="">
-                            <h3 className="qualification__title">Web Developer Intern</h3>
-                            <span className="qualification__subtitle">Prodigy</span>
+                            <h3 className="qualification__title">Front end  Developer Intern</h3>
+                            <span className="qualification__subtitle">Motioncut Lucknow</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"></i>&nbsp;March,2024 - April,2024
                             </div>
@@ -115,36 +114,22 @@ function Qualification() {
                         <div></div>
                         <div>
                             <span className="qualification__rounder"></span>
-                            {/* <span className="qualification__line"></span> */}
+                       
                         </div>
 
 
 
-                        {/* <div className="">
-                            <h3 className="qualification__title">Art Director</h3>
-                            <span className="qualification__subtitle">Spain - Institute</span>
+                         <div className="">
+                            <h3 className="qualification__title">Certified by Naresh IT hydrabad</h3>
+                            <span className="qualification__subtitle">Naresh it- Institute</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i>2021 - present
+                                <i className="uil uil-calendar-alt"></i> August,2023 -  January,2024
                             </div>
-                        </div> */}
+                        </div> 
                     </div>
 
 
-                    {/* <div className="qualification__data">
-                        <div className="">
-                            <h3 className="qualification__title">Web development</h3>
-                            <span className="qualification__subtitle">Spain - Institute</span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i>2021 - present
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div> */}
+               
                 </div>
             </div>
         </div>

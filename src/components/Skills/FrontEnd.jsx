@@ -19,7 +19,7 @@ function FrontEnd() {
                     <i className="bx bxl-html5"></i>
                     <div className="">
                         <h3 className="skills__name">HTML</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Expert</span>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@ function FrontEnd() {
                     <i className="bx bxl-css3"></i>
                     <div className="">
                         <h3 className="skills__name">CSS</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level"> Expert</span>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ function FrontEnd() {
                     <i className="bx bxl-bootstrap"></i>
                     <div className="">
                         <h3 className="skills__name">BootStrap</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Expert</span>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ function FrontEnd() {
                     <i className="bx bxl-github"></i>
                     <div className="">
                         <h3 className="skills__name">Git/GitHub</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level"> Expert</span>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ function FrontEnd() {
                     <i className="bx bxl-react"></i>
                     <div className="">
                         <h3 className="skills__name">React Js</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Expert</span>
                     </div>
                 </div>
             </div>

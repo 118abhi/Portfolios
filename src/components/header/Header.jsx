@@ -2,11 +2,7 @@ import React, { useState } from 'react'
 import "./header.css"
 
 export default function Header() {
-    // window.addEventListener("scroll",function(){
-    //     const header = document.querySelector(".header");
-    //     if(this.scrollY >= 80) header.classList.add("scroll-header")
-    //     else header.classList.remove("scroll-header")
-    // })
+ 
 
     const [activeNav,setActiveNav] = useState("")
     const [toggle,showMenu] = useState(false)
@@ -14,7 +10,7 @@ export default function Header() {
     return (
         <header className="header" id='header'>
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Shiva Chary</a>
+                <a href="index.html" className="nav__logo">Abhii Sahani</a>
                 <div className={toggle?"nav__menu show-menu":"nav__menu"}>
                     <ul className="nav__list grid">
                         <li className="nav__item">

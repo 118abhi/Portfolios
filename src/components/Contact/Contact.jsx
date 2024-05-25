@@ -9,8 +9,8 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm('service_0rle1dq', 'template_lxz80kp', form.current, {
-        publicKey: 'F7gcM_d_LPGSFZOCL',
+      .sendForm('service_har5y1f', 'template_m813ev1', form.current, {
+        publicKey: 'J0fjJO-c99ZCma5Q_',
       })
     e.target.reset()
   };
@@ -59,9 +59,9 @@ function Contact() {
                         <i className="bx bx-mail-send contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">shivacharyguddoju@gmail.com</span>
+                        <span className="contact__card-data">abhisahani118@gmail.com</span>
 
-                        <a href="mailto:shivacharyguddoju@gmail.com.com" className="contact__button">
+                        <a href="mailto:abhisahani118@gmail.com" className="contact__button">
                             Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
 
@@ -70,9 +70,9 @@ function Contact() {
                         <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Whatsapp</h3>
-                        <span className="contact__card-data">9640441246</span>
+                        <span className="contact__card-data">8739084011</span>
 
-                        <a href="https://api.whatsapp.com/send?phone=+919640441246&text=Hello, Shiva chary!" className="contact__button">
+                        <a href="https://api.whatsapp.com/send?phone=+918739084011&text=Hello,Abhi sahani!" className="contact__button">
                             Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
 
@@ -83,7 +83,7 @@ function Contact() {
                         <h3 className="contact__card-title">LinkedIn</h3>
                         <span className="contact__card-data">@linkedinhandle</span>
 
-                        <a href="https://www.linkedin.com/in/shiva-chary-guddoju-867b93290/" className="contact__button">
+                        <a href="https://www.linkedin.com/in/abhi-sahani-469523224/" className="contact__button">
                             Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
 
@@ -102,11 +102,8 @@ function Contact() {
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__form-div">
                         <label htmlFor="" className="contact__form-tag">Name</label>
-                        <input 
-                        type="name"
-                        name='name'
-                        className="contact__form-input"
-                        placeholder= "whats your name" />
+                          <input 
+                          type="name" name='name'className="contact__form-input"  placeholder= "whats your name" />
                     </div>
                     <div className="contact__form-div">
                         <label htmlFor="" className="contact__form-tag">Mail</label>

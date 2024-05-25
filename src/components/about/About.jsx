@@ -1,8 +1,8 @@
 import {React,useRef,useEffect} from 'react'
 import "./about.css"
 import ScrollReveal from 'scrollreveal'
-import AboutImg from "../../assets/profile1-modified.jpg"
-import CV from "../../assets/Shiva_resume.pdf"
+import AboutImg from "../../assets/abhi.jpeg"
+import CV from "../../assets/cv.pdf"
 import Info from './Info'
 
 
@@ -26,7 +26,11 @@ function About() {
             <div className="about__data">
                 <Info/>
 
-                <p className="about__description">A CS student specializing in AI & ML, armed with strong problem-solving skills and a thirst for learning. I thrive on challenges and embrace new opportunities with enthusiasm. As a full-stack developer, I craft innovative solutions that make a difference.Let's create the future together!</p>
+                <p className="about__description">A CS student specializing in Frontend and mern stack, armed with 
+                 problem-solving skills and a thirst for learning. I thrive on challenges and embrace new 
+                 opportunities with enthusiasm.
+                  As a Front end developer, I craft innovative solutions that make a difference.
+                  Let's create the future together!</p>
 
 
                 <a href={CV} download='' className="button button--flex">Download CV

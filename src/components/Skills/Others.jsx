@@ -63,25 +63,25 @@ function Others() {
                 <div className="skills__data">
                     <i className="bx bxl-python"></i>
                     <div className="">
-                        <h3 className="skills__name">Python</h3>
-                        <span className="skills__level">Advanced</span>
+                        <h3 className="skills__name">Typescript</h3>
+                        <span className="skills__level">Bigggner</span>
                     </div>
                 </div>
 
                 <div className="skills__data">
-                    <i className="bx bxl-c-plus-plus"></i>
+                    {/* <i className="bx bxl-c-plus-plus"></i> */}
                     <div className="">
-                        <h3 className="skills__name">C/C++</h3>
-                        <span className="skills__level">Intermediate</span>
+                        {/* <h3 className="skills__name">C/C++</h3>
+                        <span className="skills__level">Intermediate</span> */}
                     </div>
                 </div>
 
 
                 <div className="skills__data">
-                    <i className="bx bxl-joomla"></i>
+                    {/* <i className="bx bxl-joomla"></i> */}
                     <div className="">
-                        <h3 className="skills__name">AI & ML</h3>
-                        <span className="skills__level">Beginner</span>
+                        {/* <h3 className="skills__name">AI & ML</h3>
+                        <span className="skills__level">Beginner</span> */}
                     </div>
                 </div>
             </div>
@@ -96,18 +96,18 @@ function Others() {
                 </div>
 
                 <div className="skills__data">
-                    <i className="bx bxl-java"></i>
+                    {/* <i className="bx bxl-java"></i> */}
                     <div className="">
-                        <h3 className="skills__name">Java</h3>
-                        <span className="skills__level">Intermediate</span>
+                        {/* <h3 className="skills__name">Java</h3>
+                        <span className="skills__level">Intermediate</span> */}
                     </div>
                 </div>
 
                 <div className="skills__data">
-                    <i className="bx bx-data"></i>
+                    {/* <i className="bx bx-data"></i> */}
                     <div className="">
-                        <h3 className="skills__name">Data Analytics</h3>
-                        <span className="skills__level">Beginner</span>
+                        {/* <h3 className="skills__name">Data Analytics</h3>
+                        <span className="skills__level">Beginner</span> */}
                     </div>
                 </div>
             </div>
