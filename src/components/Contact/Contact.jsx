@@ -1,18 +1,39 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ScrollReveal from 'scrollreveal';
 import "./contact.css"
 
 function Contact() {
     const form = useRef();
+    const [isSending, setIsSending] = useState(false);
+    const [isSent, setIsSent] = useState(false);
+
+    useEffect(() => {
+        if (isSent) {
+            const timer = setTimeout(() => setIsSent(false), 5000);
+            return () => clearTimeout(timer);
+        }
+    }, [isSent]);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
+
     emailjs
       .sendForm('service_har5y1f', 'template_m813ev1', form.current, {
         publicKey: 'J0fjJO-c99ZCma5Q_',
       })
-    e.target.reset()
+      .then(
+        () => {
+          setIsSending(false);
+          setIsSent(true);
+          e.target.reset();
+        },
+        (error) => {
+          setIsSending(false);
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   const ref1 = useRef(null) 
@@ -101,33 +122,42 @@ function Contact() {
 
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__form-div">
-                        <label htmlFor="" className="contact__form-tag">Name</label>
+                        <label htmlFor="name" className="contact__form-tag">Name</label>
                           <input 
-                          type="name" name='name'className="contact__form-input"  placeholder= "whats your name" />
+                          type="text"
+                          id="name"
+                          name='name'
+                          className="contact__form-input"
+                          placeholder= "whats your name"
+                          required />
                     </div>
                     <div className="contact__form-div">
-                        <label htmlFor="" className="contact__form-tag">Mail</label>
+                        <label htmlFor="email" className="contact__form-tag">Mail</label>
                         <input 
                         type="email"
+                        id="email"
                         name='email'
                         className="contact__form-input"
-                        placeholder= "write your Email" />
+                        placeholder= "write your Email"
+                        required />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
-                        <label htmlFor="" className="contact__form-tag">Project</label>
+                        <label htmlFor="project" className="contact__form-tag">Project</label>
                         <textarea 
                         name="project" 
-                        id="" 
+                        id="project"
                         cols="30" 
                         rows="10"
                         className='contact__form-input' 
-                        placeholder='write your project'></textarea>
+                        placeholder='write your project'
+                        required></textarea>
                     </div>
 
-                    <button className="button button--flex"> Send Mesage
+                    <button className="button button--flex" disabled={isSending}>
+                    {isSending ? "Sending..." : "Send Message"}
                     <svg
-                    class="button__icon"
+                    className="button__icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -144,6 +174,12 @@ function Contact() {
                   ></path>
                         </svg>
                     </button>
+
+                    {isSent && (
+                        <p className="contact__success-message">
+                            Message sent successfully!
+                        </p>
+                    )}
                 </form>
             </div>
         </div>
