@@ -1,36 +1,34 @@
-import React, { useRef,useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
+import { motion } from 'framer-motion';
 import './home.css'
 import Social from './Social'
 import Data from './Data'
 import ScrollDown from './ScrollDown'
 
-
 export default function Home() {
-  const ref = useRef(null);
-  useEffect(()=>{
-    ScrollReveal().reveal(ref.current,{
-      origin:'bottom',
-      distance:'100px',
-      duration:1000,
-    });
-  },[]);
-
   return (
-    <div>
-      <section className="home section" id="home">
-        <div className="home__container container grid">
-            <div ref={ref} className="home__content grid">
-                <Social />
+    <section className="home section" id="home">
+      <div className="home__container container grid">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="home__content grid"
+        >
+          <Social />
 
-                <div className="home__img"></div>
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="home__img"
+          ></motion.div>
 
-                <Data/>
-            </div>
+          <Data/>
+        </motion.div>
 
-            <ScrollDown/>
-        </div>
-      </section>
-    </div>
+        <ScrollDown/>
+      </div>
+    </section>
   )
 }

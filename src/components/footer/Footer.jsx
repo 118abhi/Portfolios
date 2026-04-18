@@ -1,43 +1,60 @@
-import React from 'react'
+import { motion } from 'framer-motion'
+import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react'
 import './footer.css'
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer__container">
-        <h1 className="footer__title">Abhii</h1>
-        <ul className="footer__list">
+    <footer className="footer bg-white border-t py-12">
+      <div className="footer__container container">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="footer__title text-2xl font-bold text-center mb-8"
+        >
+          Abhii
+        </motion.h1>
+
+        <ul className="footer__list flex justify-center gap-8 mb-8">
           <li>
-            <a href="#about" className='footer__link'>About</a>
+            <a href="#about" className='text-sm text-gray-500 hover:text-gray-900 transition-colors'>About</a>
           </li>
           <li>
-            <a href="#services" className='footer__link'>
-              Projects
-            </a>
+            <a href="#services" className='text-sm text-gray-500 hover:text-gray-900 transition-colors'>Projects</a>
           </li>
           <li>
-            <a href="#qualification" className='footer__link'>Education</a>
+            <a href="#qualification" className='text-sm text-gray-500 hover:text-gray-900 transition-colors'>Education</a>
           </li>
         </ul>
 
-        <div className="footer__social">
-            <a href=" #" target="_blank" className=" footer_icon_social footer__social-link" >HackerRank</a>
+        <div className="footer__social flex justify-center gap-6 mb-8">
+            {[
+                { name: 'HackerRank', href: '#' },
+                { name: 'LeetCode', href: '#' },
+                { name: 'CodeChef', href: '#' },
+                { name: 'CodeForces', href: '#' }
+            ].map((social) => (
+                <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-semibold text-gray-400 hover:text-gray-900 transition-colors flex items-center gap-1"
+                >
+                    {social.name} <ExternalLink size={10} />
+                </a>
+            ))}
+        </div>
 
-            <a href=" #" className="footer_icon_social footer__social-link" target='_blank'>
-              LeetCode
-            </a>
-            
-            <a href=" #" className="footer_icon_social footer__social-link" target='_blank'>
-              CodeChef
-            </a>
+        <div className="flex justify-center gap-6 mb-8 text-gray-400">
+            <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-gray-900 transition-colors"><Github size={20} /></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="hover:text-gray-900 transition-colors"><Linkedin size={20} /></a>
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="hover:text-gray-900 transition-colors"><Twitter size={20} /></a>
+        </div>
 
-            <a href=" #" className="footer_icon_social footer__social-link" target='_blank'>
-              CodeForces
-            </a>
-          </div>
-          <span className='footer__copy'>
-            &#169; Abhisahani. All rights reserved
-          </span>
+        <span className='footer__copy block text-center text-xs text-gray-400'>
+          &#169; {new Date().getFullYear()} Abhisahani. All rights reserved
+        </span>
       </div>
     </footer>
   )

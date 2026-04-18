@@ -11,11 +11,13 @@ import Testimonials from './components/testimonials/Testimonials'
 import Footer from './components/footer/Footer'
 import Scrollup from './components/scrollup/Scrollup'
 import Work from './components/Work/Work'
+import ScrollProgress from './components/ScrollProgress'
 
 function App() {
 
   return (
     <>
+      <ScrollProgress />
       <Design/>
       <Header/>
       <main className="main">

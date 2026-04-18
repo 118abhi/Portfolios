@@ -1,75 +1,45 @@
-import React from 'react'
-import { useEffect,useRef } from 'react';
-import ScrollReveal from 'scrollreveal';
+import { motion } from 'framer-motion'
+import { CheckCircle2 } from 'lucide-react'
+
+const skills = [
+    { name: "Node JS", level: "Expert" },
+    { name: "Express JS", level: "Intermediate" },
+    { name: "Firebase", level: "Intermediate" },
+    { name: "MongoDB", level: "Beginner" },
+    { name: "RESTful API", level: "Intermediate" },
+    { name: "Appwrite", level: "Intermediate" },
+]
 
 function BackEnd() {
-    const ref = useRef(null);
-    useEffect(()=>{
-        ScrollReveal().reveal(ref.current,{
-            origin:"right",
-            distance:"100px",
-            duration: 2000
-        })
-    })
   return (
-    <div ref={ref} className='skills__content'>
-        <h3 className="skills__title">Back-End</h3>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className='skills__content p-8 border rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow'
+    >
+        <h3 className="skills__title text-center text-xl font-semibold mb-6">Back-End</h3>
 
-
-        <div className="skills__box">
-            <div className="skills__group">
-                <div className="skills__data">
-                    <i className="bx bxl-nodejs"></i>
-                    <div className="">
-                        <h3 className="skills__name">Node JS</h3>
-                        <span className="skills__level">Expert</span>
+        <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+            {skills.map((skill, index) => (
+                <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    className="flex items-start gap-2"
+                >
+                    <CheckCircle2 size={16} className="mt-1 text-gray-900" />
+                    <div>
+                        <h3 className="text-base font-medium leading-none">{skill.name}</h3>
+                        <span className="text-xs text-gray-500">{skill.level}</span>
                     </div>
-                </div>
-
-                 <div className="skills__data">
-                    <i className="bx bxl-thudnerclint"></i>
-                    <div className="">
-                        <h3 className="skills__name">Thunder Clint</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div> 
-
-                <div className="skills__data">
-                    <i className="bx bxs-server"></i>
-                    <div className="">
-                        <h3 className="skills__name">Express JS</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-            </div>
-
-            <div className="skills__group">
-                <div className="skills__data">
-                    <i className="bx bxs-coin-stack"></i>
-                    <div className="">
-                        <h3 className="skills__name">Firebase</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-
-                <div className="skills__data">
-                    <i className="bx bxl-mongodb"></i>
-                    <div className="">
-                        <h3 className="skills__name">Mongo DB</h3>
-                        <span className="skills__level">Biggner</span>
-                    </div>
-                </div>
-
-                <div className="skills__data">
-                    <i className="bx bx-horizontal-left"></i>
-                    <div className="">
-                        <h3 className="skills__name">RESTful API</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-            </div>
+                </motion.div>
+            ))}
         </div>
-    </div>
+    </motion.div>
   )
 }
 
