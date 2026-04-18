@@ -104,6 +104,13 @@
     resize: none;
 }
 
+.contact__form-status {
+    margin-top: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+}
+
 @media screen and (max-width:992px){
     .contact__container{
         column-gap: 3rem;
